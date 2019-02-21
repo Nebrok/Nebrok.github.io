@@ -1,11 +1,11 @@
 
 body {
-  background: linear-gradient(-45deg, #35577D, #141E30);
+  background-color: rgba(128,0,128,0.5)
 }
 
 
 h1 {
-  color: purple;
+  color: rgb(128, 0, 128);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: Center;
 }
