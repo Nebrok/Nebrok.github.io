@@ -1,11 +1,12 @@
 
 body {
-  background: rgba(128,0,128,0.8)
+  background: rgba(128,0,128,0.5);
+  align-content: center;
 }
 
 
 h1 {
-  color: rgb(128, 0, 128);
+  color: blue;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: Center;
 }
