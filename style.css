@@ -1,6 +1,7 @@
 
 body {
   background: rgba(200, 200, 200, 0.75);
+  font-family: 'Space Mono', monospace;
 }
 
 
@@ -11,7 +12,13 @@ h1 {
   font-size: 75px;
 }
 
+.body {
+  width: 80%;
+  align-self: center;
+}
+
 
 
 /*
 font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Space Mono', monospace;
