@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Space Mono', monospace;
-  background-color: rgb(225, 225, 225);
+  /*background-color: rgb(225, 225, 225);*/
+  background-image: url('./KWp2vVP.gif');
   width: 100%;
   text-align: center;
 }
@@ -21,7 +22,7 @@ body {
 .nav li, .nav li a {
   width: 100px;
   height: 25px;
-  background: white;
+  background: rgb(200,200,200);
   border-radius: 5px;
   list-style-type: none;
   display: inline-block;
@@ -41,6 +42,15 @@ h1 {
   width: 80%;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.body li a{
+  color: blue;
+}
+
+.body p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .subheading {
