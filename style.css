@@ -74,6 +74,14 @@ footer {
   display: inline-block; 
 }
 
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 /*
 font-family: 'ZCOOL QingKe HuangYou', cursive;
 font-family: 'Space Mono', monospace;
