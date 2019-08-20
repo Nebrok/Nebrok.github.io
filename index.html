@@ -2,6 +2,8 @@
 
 <html>
   <head>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <link href="./style.css" type="text/css" rel="stylesheet">
@@ -26,6 +28,8 @@
         continous project.
       </p>
       <br><br>
+      <ul id = "Counter"></ul>
+      <br><br>
       <h3 class="subheading">Useful Links</h3>
       <ul class="usefull_links">
         <li><a href = "https://nebrok.github.io">Home Page</a></li>
@@ -35,8 +39,25 @@
       </ul>
       <br><br>
     </div>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDqvJEdtSdtw7SQCZ906WB76p1_TspvjSg",
+        authDomain: "personal-website-6ce97.firebaseapp.com",
+        databaseURL: "https://personal-website-6ce97.firebaseio.com",
+        projectId: "personal-website-6ce97",
+        storageBucket: "personal-website-6ce97.appspot.com",
+        messagingSenderId: "218625872958",
+        appId: "1:218625872958:web:69a670af5a477aa5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src = "app.js"></script>
   </body>
   <footer>
-      <p id="acknowledgments">Hosted by GitHub pages</p>
+      <p>Hosted by GitHub pages</p>
+      <p>Created by <a href = "https://nebrok.github.io">Korben Lyall-Wilson</a></p>
   </footer>
 </html>
