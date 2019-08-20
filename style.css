@@ -17,6 +17,7 @@ body {
   position: fixed;
   top: 3%;
   left: 3%;
+  vertical-align: center;
 }
 
 .nav li, .nav li a {
@@ -28,6 +29,11 @@ body {
   display: inline-block;
   text-decoration-line: none;
   color: black;
+}
+
+.nav .current {
+  border: 3px solid red;
+  height: 31px;
 }
 
 .nav li:hover, .nav li a:hover {
