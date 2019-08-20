@@ -6,6 +6,7 @@
 
 
 body {
+  margin-top: 50px;
   font-family: 'Space Mono', monospace;
   background-color: rgb(50, 50, 50);
   width: 100%;
@@ -29,6 +30,12 @@ body {
   color: black;
 }
 
+.nav li:hover, .nav li a:hover {
+  background: rgb(0,0,0);
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+
 h1 {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   margin: 10px auto;
@@ -37,7 +44,7 @@ h1 {
 }
 
 .body {
-  background-color: white;
+  background-color: rgb(255,255,245);
   width: 80%;
   margin: 0 auto;
   border-radius: 5px;
