@@ -13,8 +13,23 @@ function renderData(doc) {
 
 }
 
+let test = 1;
+
+db.collection("Site_Info").doc("General Info").get().then(function(doc) {
+  if (doc.exists) {
+    let CV = doc.data().current_Visits;
+    CV++;
+    test = CV;
+    db.collection("Site_Info").doc("General Info").set({
+      current_Visits: test
+    })
+  }
+})
+
+// Getting Data
 db.collection('Site_Info').get().then((snapshot) => {
   snapshot.docs.forEach(doc => {
     renderData(doc)
   })
 })
+
