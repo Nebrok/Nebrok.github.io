@@ -23,10 +23,11 @@ body {
 .nav li, .nav li a {
   width: 100px;
   height: 25px;
+  margin-top: 10px;
   background: rgb(200,200,200);
   border-radius: 5px;
   list-style-type: none;
-  display: inline-block;
+  display: block;
   text-decoration-line: none;
   color: black;
 }
@@ -49,7 +50,7 @@ body {
 }
 
 .counterBox ul {
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
   background: rgb(200,200,200);
   list-style-type: none;
@@ -63,24 +64,32 @@ h1 {
   color: red;
 }
 
+h2 {
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: red;
+}
+
 .body {
   background-color: rgb(255,255,245);
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.aboutMe {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .body li a{
   color: blue;
 }
 
-.body p {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .subheading {
   font-size: 25px;
+  text-decoration: none;
 }
 
 .usefull_links {
@@ -93,8 +102,7 @@ footer {
   height: 10%;
   text-align: center;
   background-color: rgb(0,0,0);
-  position: fixed;
-  top: 90%
+  margin-top: 25px;
 }
 
 footer a {
