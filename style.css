@@ -42,6 +42,20 @@ body {
   font-weight: bold;
 }
 
+.counterBox {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+}
+
+.counterBox ul {
+  width: 200px;
+  border-radius: 5px;
+  background: rgb(200,200,200);
+  list-style-type: none;
+  border: 3px solid red;
+}
+
 h1 {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   margin: 10px auto;
