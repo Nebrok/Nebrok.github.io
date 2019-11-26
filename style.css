@@ -117,16 +117,12 @@ h2 {
   width: 87%;
   margin: 0 0 0 12.5%;
   border-radius: 5px;
-}
-
-.body p {
-  margin: 0px 2.5%;
+  padding: 0 10px;
 }
 
 .aboutMe {
   text-align: left;
-  width: 90%;
-  margin: 0 auto;
+
 }
 
 .body li a{
