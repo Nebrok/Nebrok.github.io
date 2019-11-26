@@ -2,66 +2,107 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 75%;
 }
 
 
 body {
-  margin-top: 55px;
   font-family: 'Space Mono', monospace;
   background-color: rgb(50, 50, 50);
   width: 100%;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  font-size: 3em;
+}
+
+header {
+  width: 12%;
 }
 
 .nav {
   position: fixed;
-  top: 3%;
-  left: 3%;
-  vertical-align: center;
+  height: 100%;
+  width: 12%;
+  top: 0px;
+  background-color: black;
 }
 
-.nav li, .nav li a {
-  width: 100px;
-  height: 25px;
-  margin-top: 10px;
-  background: rgb(200,200,200);
-  border-radius: 5px;
+.nav ul {
+  margin: 10px;
+}
+
+.nav li {
   list-style-type: none;
-  display: block;
-  text-decoration-line: none;
-  color: black;
+  background-color: black;
+  color: white;
+  height: 45px;
+  margin-left: -10px;
+  border-left: 4px solid white;
+  text-align: left;
+  padding-left: 10%;
 }
 
 .nav .current {
-  border: 3px solid red;
-  height: 31px;
+  border-left: 4px solid red;
 }
 
-.nav li:hover, .nav li a:hover {
-  background: rgb(0,0,0);
-  color: rgb(255,255,255);
+.nav .current:hover{
+  border-left: 8px solid red;
+}
+
+.nav div {
+  padding: 5% 0;
+  font-size: 1.7em;
+}
+
+.nav a {
+  text-decoration-line: none;
+  color:inherit;
+  font-size: 1em;
+}
+
+.nav li:hover {
+  border-left: 8px solid white;
   font-weight: bold;
+}
+
+.footer {
+  bottom: 1%;
+  width: 12%;
+  position: fixed;
+  background-color: black;
+  color: white;
+  font-size: 0.5em;
+}
+
+.footer a {
+  font-size: 1em;
+  color: white;
 }
 
 .counterBox {
   position: fixed;
-  top: 3%;
-  right: 3%;
+  width: 12%;
+  bottom: 6%;
 }
 
 .counterBox ul {
-  width: 100px;
-  border-radius: 5px;
-  background: rgb(200,200,200);
-  list-style-type: none;
+  width: 100%;
+  color:white; 
+  font-size: 1em;
   border: 3px solid red;
+  font-weight: strong;
+  list-style-type: none;
 }
 
 h1 {
+  width: 40%;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
-  margin: 10px auto;
-  font-size: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 12.5%;
+  text-align: left;
+  font-size: 2em;
   color: red;
 }
 
@@ -73,14 +114,18 @@ h2 {
 
 .body {
   background-color: rgb(255,255,245);
-  width: 75%;
-  margin: 0 auto;
+  width: 87%;
+  margin: 0 0 0 12.5%;
   border-radius: 5px;
+}
+
+.body p {
+  margin: 0px 2.5%;
 }
 
 .aboutMe {
   text-align: left;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -89,7 +134,7 @@ h2 {
 }
 
 .subheading {
-  font-size: 25px;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -107,10 +152,7 @@ footer {
   position: fixed;
   top: 90%;
   z-index: 100;
-}
-
-footer a {
-  color: white;
+  font-size: 0.5em;
 }
 
 .gallery li {
