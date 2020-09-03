@@ -13,9 +13,9 @@
   <header>
       <div class = "nav">
         <ul>
-          <li><div><a href = "./index.html">HOME</a></div></li>
-          <li><div><a href = "./parkingPage.html">PORTFOLIO</a></div></li>
-          <li><div><a href = "./programs.html">PROGRAMS</a></div></li>
+          <li id="navbtnhome"><div><a href = "./index.html">HOME</a></div></li>
+          <li id="navbtnport"><div><a href = "./parkingPage.html">PORTFOLIO</a></div></li>
+          <li id="navbtnprog"><div><a href = "./programs.html">PROGRAMS</a></div></li>
           <li class = "current"><div>ABOUT ME</div></li>
         </ul>
       </div>
@@ -24,9 +24,10 @@
         <p>Created by <a href = "https://nebrok.github.io">Korben</a></p>
       </div>
   </header>
-  <body class = "aboutMe">
+  <body>
     <h1>About Me</h1>
     <div class = 'body'>
+      <h3 class = "subheading">General Information</h3><br>
       <h3>Programming</h3>
       <p>I am an ametuer programmer. I have learnt and used serveral different languages:</p><br>
       <p><strong>Python</strong></p>
@@ -34,15 +35,32 @@
         to create Neural Networks. </p><br>
       <p><strong>Javascript</strong></p> 
       <p> I have used javascript in the creation of this website. I have also made several other simulations in javascript.
-        My most notable accomplishment was to simulate evolution.</p>
+        My most notable accomplishment was to simulate evolution using circular "creatures" moving around a screen eating 
+        "food" <a style="text-decoration: none;" href="/Pop_Sim/pop_sim.html" target="blank">(View Here)</a>. </p>
       <br>
       <h3>Photography</h3>
       <p>I dabble in photography everynow and then aswell, teaching my self Photoshop and Lightroom skills as I go along.</p>
       <br><br>
 
-      <h3 class='subheading'>Instagram</h3>
+      <h3 class='subheading'>Socials</h3>
       <p>Follow me on Instagram: @whenboredomkicksin</p>
       <br><br>
     </div>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDqvJEdtSdtw7SQCZ906WB76p1_TspvjSg",
+        authDomain: "personal-website-6ce97.firebaseapp.com",
+        databaseURL: "https://personal-website-6ce97.firebaseio.com",
+        projectId: "personal-website-6ce97",
+        storageBucket: "personal-website-6ce97.appspot.com",
+        messagingSenderId: "218625872958",
+        appId: "1:218625872958:web:69a670af5a477aa5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src = "./app.js"></script>
   </body>
 </html>

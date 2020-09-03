@@ -8,30 +8,46 @@
 
     <title>My Portfolio</title>
   </head>
+  <header>
+    <div class = "nav">
+      <ul>
+        <li id="navbtnhome"><div><a href = "./index.html">HOME</a></div></li>
+        <li class="current"><div>PORTFOLIO</div></li>
+        <li id="navbtnprog"><div><a href = "./programs.html">PROGRAMS</a></div></li>
+        <li id="navbtnaboutMe"><div><a href = "./aboutMe.html">ABOUT ME</a></div></li>
+      </ul>
+    </div>
+    <div class = "footer">
+      <p>Hosted by GitHub pages</p>
+      <p>Created by <a href = "https://nebrok.github.io">Korben</a></p>
+    </div>
+  </header>
   <body>
-      <div class = "nav">
-          <ul>
-            <li><a href = "./index.html">Home</a></li>
-            <li class = 'current'>Portfolio</li>
-            <li><a href = "./parkingPage.html">Programs</a></li>
-          </ul>
-        </div>
     <h1>Portfolio</h1>
     <div class = 'body'>
       <p>This is a gallery of photos which I have taken.</p>
       <ul class = "gallery">
-        <li><img src="./DSC_0434.jpg" alt="Test" width="300" height="225" transform="rotate(90deg)"></li>
-        <li><img src="./DSC_0256.jpg" alt="Test" width="300" height="225"></li>
-        <li><img src="./DSC_0217.jpg" alt="Test" width="300" height="225"></li>
-        <li><img src="./DSC_0456.jpg" alt="Test" width="300" height="225"></li>
-        <li><img src="./Tank Inbetween Feet.jpg" alt="Test" width="300" height="225"></li>
+        <li><img src="./Pictures/Heath, liam and rueben.jpg" alt="Test"></li>
+        <li><img src="./Pictures/WIN_20180824_09_44_56_Pro.jpg" alt="Test"></li>
+        <li><img src="./Pictures/WIN_20181121_13_01_27_Pro.jpg" alt="Test"></li>
+        <li><img src="./Pictures/WIN_20190214_10_39_58_Pro.jpg" alt="Test"></li>
       </ul>
-
     </div>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDqvJEdtSdtw7SQCZ906WB76p1_TspvjSg",
+        authDomain: "personal-website-6ce97.firebaseapp.com",
+        databaseURL: "https://personal-website-6ce97.firebaseio.com",
+        projectId: "personal-website-6ce97",
+        storageBucket: "personal-website-6ce97.appspot.com",
+        messagingSenderId: "218625872958",
+        appId: "1:218625872958:web:69a670af5a477aa5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src = "./app.js"></script>
   </body>
-  <footer>
-      <p>Hosted by GitHub pages</p>
-      <p>Created by <a href = "https://nebrok.github.io">Korben Lyall-Wilson</a></p>
-      <br>
-  </footer>
 </html>

@@ -13,10 +13,10 @@
   <header>
       <div class = "nav">
         <ul>
-          <li class = 'current'><div>HOME</div></li>
-          <li><div><a href = "./parkingPage.html">PORTFOLIO</a></div></li>
-          <li><div><a href = "./programs.html">PROGRAMS</a></div></li>
-          <li><div><a href = "./aboutMe.html">ABOUT ME</a></div></li>
+          <li id="navbtnhome" class = 'current'><div>HOME</div></li>
+          <li id="navbtnport"><div><a href = "./portfolio.html">PORTFOLIO</a></div></li>
+          <li id="navbtnprog"><div><a href = "./programs.html">PROGRAMS</a></div></li>
+          <li id="navbtnaboutMe"><div><a href = "./aboutMe.html">ABOUT ME</a></div></li>
         </ul>
       </div>
       <div class = "footer">
@@ -50,7 +50,7 @@
       <p>Follow me on Instagram: @whenboredomkicksin</p>
       <br>
     </div>
-    
+    <script src = "./app.js"></script>
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -66,7 +66,6 @@
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
     </script>
-    <script src = "app.js"></script>
   </body>
   <!---
   <footer>

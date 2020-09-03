@@ -13,10 +13,10 @@
   <header>
       <div class = "nav">
         <ul>
-          <li><div><a href = "./index.html">HOME</a></div></li>
-          <li><div><a href = "./parkingPage.html">PORTFOLIO</a></div></li>
+          <li id="navbtnhome"><div><a href = "./index.html">HOME</a></div></li>
+          <li id="navbtnport"><div><a href = "./parkingPage.html">PORTFOLIO</a></div></li>
           <li class = "current"><div>PROGRAMS</div></li>
-          <li><div><a href = "./aboutMe.html">ABOUT ME</a></div></li>
+          <li id="navbtnaboutMe"><div><a href = "./aboutMe.html">ABOUT ME</a></div></li>
         </ul>
       </div>
       <div class = "footer">
@@ -27,14 +27,32 @@
   <body>
     <h1>Programming</h1>
     <div class = "body">
-      <h2>List of programs</h2>
-      <br>
+      <p>This page is a list of different programs I have written over time. I will slowly add new projects as I convert
+        them to a form that is viewable on the site, or in package downloads for you to run on your own computer. Check
+        back here regularly for new content.
+      </p><br>
+      <h2 style="margin-bottom: 15px;">List of programs</h2>
       <h3>Javascript</h3>
       <ul class = "usefull_links">
         <li><a href = "./Bouncing Ball/Bouncing Ball.html">Bouncing Ball</a></li>
         <li><a href = "./Pop_Sim/pop_sim.html">Population Simulator</a></li>
       </ul>
     </div>
-
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDqvJEdtSdtw7SQCZ906WB76p1_TspvjSg",
+        authDomain: "personal-website-6ce97.firebaseapp.com",
+        databaseURL: "https://personal-website-6ce97.firebaseio.com",
+        projectId: "personal-website-6ce97",
+        storageBucket: "personal-website-6ce97.appspot.com",
+        messagingSenderId: "218625872958",
+        appId: "1:218625872958:web:69a670af5a477aa5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src = "./app.js"></script>
   </body>
 </html>
